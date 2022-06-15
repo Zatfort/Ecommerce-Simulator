@@ -65,6 +65,10 @@ ul {
   display: flex;
   flex-direction: column; }
 
+.containernav {
+  max-width: 1200px;
+  margin: 0 auto; }
+
 .container {
   max-width: 1800px;
   margin: 0 auto; }
@@ -89,12 +93,20 @@ header {
   header .navbar {
     height: 200px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 0 2rem; }
     header .navbar .buscador {
       height: 40px;
-      width: 700px;
+      width: 400px;
       border-radius: 10px; }
+  header .menu {
+    flex-basis: 30%;
+    justify-content: space-between; }
+    header .menu .menu__item .menu__link {
+      font-size: 1.8em;
+      padding: 1rem;
+      position: relative; }
 
 .bodyindex .libros {
   width: 100%;
@@ -182,10 +194,10 @@ header {
             outline: none;
             font-size: 1em;
             font-weight: 500;
-            background: #ff5f95;
+            background: #e80007;
             color: #fff;
             cursor: pointer; }
             .bodyindex .libros .card .content .details .actionBtn button:nth-child(2) {
-              border: 1px solid #999;
+              border: 1px solid #e80007;
               color: #999;
               background: #fff; }
