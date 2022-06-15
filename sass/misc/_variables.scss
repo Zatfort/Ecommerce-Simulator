@@ -1,0 +1,49 @@
+/* Variables */
+
+$principal: #0b0c0d;
+$secondary: rgb(4, 1, 1);
+$tertiary: #FFD700;
+$cuarta:#100e11;
+$font-primary: 'Roboto', sans-serif;
+
+
+$spacings:(
+    xlarge: 5rem,
+    large: 3rem,
+    medium: 2rem,
+    small: 1.5rem,
+    xsmall:1rem
+);
+
+@each $var, $val in $spacings {
+    .spacing-#{$var} {
+        padding: #{$var};
+    }
+}
+
+
+
+$color:(
+    red:red,
+    white:white,
+    black:black,
+    blue:blue
+);
+
+@each $var, $val in $color {
+    .c-#{$var} {
+        color: #{$var};
+    }
+}
+
+$font-size:(
+    large: 1em,
+    medium: 2em,
+    small: 1.5em,
+);
+
+@each $var, $val in $font-size {
+    .fz-#{$var}{
+        font-size: #{$var};
+    }
+}

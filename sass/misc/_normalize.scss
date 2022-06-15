@@ -1,0 +1,22 @@
+/* Imports */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+  /* Globals */
+html {
+    font-size: 62.5%;
+    font-family: $font-primary;
+    color: $principal; }
+  
+  a {
+    text-decoration: none;
+    color: $secondary;
+    display: inline-block; }
+  
+  ul {
+    list-style-type: none; }
+  
