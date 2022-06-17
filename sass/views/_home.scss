@@ -1,6 +1,7 @@
 .bodyindex{
 
     .libros{
+        gap: 10px;
         width: 100%;
         height: 600px;
         display: flex;
@@ -65,18 +66,23 @@
                     width: 100%;
                     transition: 0.5s;
                     transform: translateY(150px);
-                    h2{
-                        font-size: 3em;
-                        font-weight: 600;
-                        color: #555;
-                        line-height: 1.2em;
-                        span{
+
+                    .nombres{
+                        .cardname{
+                            font-size: 3em;
+                            font-weight: 600;
+                            color: #555;
+                            line-height: 1.2em;
+                        }
+                        .autor{
                             font-size: 0.75em;
                             font-weight: 500;
-                            opacity: 0.5;
-                            
+                            opacity: 0.5;  
                         }
+                        
                     }
+                   
+                    
                     .data{
                         display: flex;
                         justify-content: space-between;
@@ -85,13 +91,13 @@
                             font-size: 1.4em;
                             color: #555;
                             line-height: 1.2em;
-                            font-weight: 600;
-                            span{
-                                font-size: 0.85em;
-                                font-weight: 400;
+                        }font-weight: 600;
+                        span{
+                            font-size: 0.85em;
+                            font-weight: 400;
                                 opacity: 0.5;
                             }
-                        }
+                        
                     }
                     .actionBtn{
                         display: flex;
@@ -118,6 +124,133 @@
             }
         }
 
+    }
+    
+
+    .carrito_simulador{
+        
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .carrito{
+            background-color: rgb(42, 6, 6);
+            width: 900px;
+            height: 350px;
+        }
+    }
+
+    .biblioteca{
+        margin-top: 50px;
+        background-color: #e80007;
+        height: 600px;
+        width: 500px ;
+        display: flex;
+        justify-content: center;
+        span{
+            font-size: large;
+
+        }
+        .menu_libros{
+            .menuTab {
+                width: 100%;
+                height: 80px;
+                display: flex;
+                padding-left: 30px;
+                align-items: center;
+                background-color: rgb(193, 193, 193);
+                border: none;
+                border-radius: 5px;
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+                margin-bottom: 10px;
+                cursor: pointer;
+                user-select: none;
+                &:hover{
+                    background-color: black;
+                    color: white;
+                    transform: scale(1.08);
+
+                }
+                .menuTabImg {
+                    width: 50px;
+                    margin-right: 5px;
+                }
+                .menuTabImg img {
+                    width: 100%;
+                }
+                .menuTabText {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+            
+
+        }
+    }
+
+
+
+    .team {
+        height: 90%;
+        min-width: 165px;
+        width: 15%;
+        margin-right: 3%;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(193, 193, 193);
+        border-radius: 10px;
+    }
+    
+    .teamTitle {
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .teamContainer {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .teamPokemon {
+        width: 60px;
+        height: 60px;
+        
+        background-color: rgb(237, 237, 237);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius:30%;
+        overflow: hidden;
+    }
+    
+    .teamPokemon img {
+        width: 90%;
+    }
+    
+    .teamCTA {
+        width: 40%;
+        height: 30px;
+        background-color: gray;
+        color: white;
+        border: 1px solid darkgray;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    
+    .teamCTA:hover {
+        background-color: black;
+        color: white;
     }
     
    

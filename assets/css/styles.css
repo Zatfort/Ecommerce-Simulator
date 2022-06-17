@@ -109,6 +109,7 @@ header {
       position: relative; }
 
 .bodyindex .libros {
+  gap: 10px;
   width: 100%;
   height: 600px;
   display: flex;
@@ -201,3 +202,104 @@ header {
               border: 1px solid #e80007;
               color: #999;
               background: #fff; }
+
+.bodyindex .carrito_simulador {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .bodyindex .carrito_simulador .carrito {
+    background-color: #999;
+    width: 900px;
+    height: 350px; }
+
+.bodyindex .biblioteca {
+  margin-top: 50px;
+  background-color: #e80007;
+  height: 600px;
+  width: 500px;
+  display: flex;
+  justify-content: center; }
+  .bodyindex .biblioteca span {
+    font-size: large; }
+  .bodyindex .biblioteca .menu_libros .menuTab {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+    background-color: #c1c1c1;
+    border: none;
+    border-radius: 5px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    user-select: none; }
+    .bodyindex .biblioteca .menu_libros .menuTab:hover {
+      background-color: black;
+      color: white;
+      transform: scale(1.08); }
+    .bodyindex .biblioteca .menu_libros .menuTab .menuTabImg {
+      width: 50px;
+      margin-right: 5px; }
+    .bodyindex .biblioteca .menu_libros .menuTab .menuTabImg img {
+      width: 100%; }
+    .bodyindex .biblioteca .menu_libros .menuTab .menuTabText {
+      font-size: 16px;
+      font-weight: 500; }
+
+.bodyindex .team {
+  height: 90%;
+  min-width: 165px;
+  width: 15%;
+  margin-right: 3%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #c1c1c1;
+  border-radius: 10px; }
+
+.bodyindex .teamTitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: white; }
+
+.bodyindex .teamContainer {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.bodyindex .teamPokemon {
+  width: 60px;
+  height: 60px;
+  background-color: #ededed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30%;
+  overflow: hidden; }
+
+.bodyindex .teamPokemon img {
+  width: 90%; }
+
+.bodyindex .teamCTA {
+  width: 40%;
+  height: 30px;
+  background-color: gray;
+  color: white;
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer; }
+
+.bodyindex .teamCTA:hover {
+  background-color: black;
+  color: white; }
