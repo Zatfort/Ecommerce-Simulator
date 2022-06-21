@@ -2,7 +2,16 @@
 //--------------
 const allLibros = [volumen1, volumen2, volumen3, volumen4]
 
-let Carrito = []
+
+let Carrito = JSON.parse(localStorage.getItem('Carrito')) || []
+
+
+
+// Spread Operator
+
+
+
+
 
 // Query de elementos
 //-------------------
@@ -22,8 +31,10 @@ const cardCTA = document.querySelector('.cardCTA')
 const teamContainer = document.querySelector('.teamContainer')
 
 
+
 // Funciones
 //----------
+
 
 
 const renderizarListaLibros = () => {
@@ -82,16 +93,12 @@ const renderizarCarrito = () => {
 const agregarLibroaCarrito = (e) => {
     const libroIdSelected = e.target.getAttribute('data-id')
     const libroSelected = allLibros.find((libros) => libros.id == libroIdSelected )
-    if(Carrito.length < 5){
-        Carrito.push(libroSelected)
+    
+    Carrito.length < 5 && Carrito.push(libroSelected)
 
-    }
-    localStorage.setItem('Carrito', JSON.stringify(Carrito))
+    
+
     renderizarCarrito()
-
-    
-    
-    
 
 }
 
@@ -115,7 +122,18 @@ const agregarListenerbotones = () => {
 cardCTA.addEventListener('click', agregarLibroaCarrito)
 
 
+
 // Ejecuciones 
 //------------
 
 renderizarListaLibros()
+
+
+
+
+
+
+
+
+
+

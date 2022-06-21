@@ -1,24 +1,24 @@
 /* HELPERS */
-.flex-row {
-    display: flex; }
+ .flex-row {
+     display: flex; }
   
-  .flex-column {
-    display: flex;
-    flex-direction: column; }
+   .flex-column {
+     display: flex;
+     flex-direction: column; }
   
 
-  .containernav{
-    max-width: 1200px;
-    margin: 0 auto;
+//   .containernav{
+//     max-width: 1200px;
+//     margin: 0 auto;
 
-  }
-  .container {
-    max-width: 1800px;
-    margin: 0 auto; }
+//   }
+//   .container {
+//     max-width: 1800px;
+//     margin: 0 auto; }
     
-  .txt_center{
-    text-align: center;
-  }
+//   .txt_center{
+//     text-align: center;
+//   }
 
 /*
   @mixin flex($direction, $justify, $align, $gap){

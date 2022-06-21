@@ -260,3 +260,46 @@
 
 
 }
+
+
+
+
+
+.text-input{
+    height: 4.0rem;
+    padding: 0 0 0 3.5rem;
+    border: 100px;
+    margin: 0;
+    color: #333;
+    line-height: normal;
+    -webkit-box-flex: 1;
+   width: 400px;
+    padding-left: 4rem;
+    display: inline-block;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    margin: 0em;
+}
+
+.botonBuscador{
+    height: 4.4rem;
+    border: 0;
+    color: #fff;
+    background: rgba(43, 44, 125, 0.717);
+    display: inline-block;
+    margin: 0 10px;
+    min-width: 140px;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    &:hover{
+        background-color: blueviolet;
+    }
+}

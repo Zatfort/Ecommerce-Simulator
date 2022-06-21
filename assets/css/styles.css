@@ -50,12 +50,17 @@ html {
   color: #0b0c0d; }
 
 a {
+  font-size: 1.9rem;
   text-decoration: none;
-  color: #040101;
+  color: whitesmoke;
   display: inline-block; }
 
 ul {
   list-style-type: none; }
+
+li {
+  display: inline-block;
+  margin: 0 20px; }
 
 /* HELPERS */
 .flex-row {
@@ -64,17 +69,6 @@ ul {
 .flex-column {
   display: flex;
   flex-direction: column; }
-
-.containernav {
-  max-width: 1200px;
-  margin: 0 auto; }
-
-.container {
-  max-width: 1800px;
-  margin: 0 auto; }
-
-.txt_center {
-  text-align: center; }
 
 /*
   @mixin flex($direction, $justify, $align, $gap){
@@ -86,27 +80,68 @@ ul {
   }
 */
 /* HEADER & NAVBAR */
-header {
+/*
+.header {
+     width: 100%;
+     height: 200px;
+    background-color: #262626;
+    .navbar{
+         height: 200px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 0 2rem;
+         .buscador{
+             height: 40px;
+             width: 400px;
+             border-radius: 10px;
+         }
+    }
+    
+}
+*/
+/* HEADER & NAVBAR */
+.container {
   width: 100%;
-  height: 200px;
-  background-color: #262626; }
-  header .navbar {
-    height: 200px;
+  height: 100vh;
+  background-image: url(../../assets/images/berserker_in_the_moonlight_by_fazal_sama_d95sn3c.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.navbar {
+  width: 80%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .navbar .logo {
+    width: 250px;
+    cursor: pointer; }
+  .navbar ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0 2rem; }
-    header .navbar .buscador {
-      height: 40px;
-      width: 400px;
-      border-radius: 10px; }
-  header .menu {
-    flex-basis: 30%;
-    justify-content: space-between; }
-    header .menu .menu__item .menu__link {
-      font-size: 1.8em;
-      padding: 1rem;
-      position: relative; }
+    height: 100px;
+    background: rgba(15, 31, 118, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px; }
+  .navbar li {
+    position: relative; }
+  .navbar li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #aae4ef;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out; }
+  .navbar li:hover::before {
+    width: 100%; }
 
 .bodyindex .libros {
   gap: 10px;
@@ -163,28 +198,28 @@ header {
         width: 100%;
         transition: 0.5s;
         transform: translateY(150px); }
-        .bodyindex .libros .card .content .details h2 {
+        .bodyindex .libros .card .content .details .nombres .cardname {
           font-size: 3em;
           font-weight: 600;
           color: #555;
           line-height: 1.2em; }
-          .bodyindex .libros .card .content .details h2 span {
-            font-size: 0.75em;
-            font-weight: 500;
-            opacity: 0.5; }
+        .bodyindex .libros .card .content .details .nombres .autor {
+          font-size: 0.75em;
+          font-weight: 500;
+          opacity: 0.5; }
         .bodyindex .libros .card .content .details .data {
           display: flex;
           justify-content: space-between;
-          margin: 20px 0; }
+          margin: 20px 0;
+          font-weight: 600; }
           .bodyindex .libros .card .content .details .data h3 {
             font-size: 1.4em;
             color: #555;
-            line-height: 1.2em;
-            font-weight: 600; }
-            .bodyindex .libros .card .content .details .data h3 span {
-              font-size: 0.85em;
-              font-weight: 400;
-              opacity: 0.5; }
+            line-height: 1.2em; }
+          .bodyindex .libros .card .content .details .data span {
+            font-size: 0.85em;
+            font-weight: 400;
+            opacity: 0.5; }
         .bodyindex .libros .card .content .details .actionBtn {
           display: flex;
           justify-content: space-between; }
@@ -210,7 +245,7 @@ header {
   align-items: center;
   justify-content: center; }
   .bodyindex .carrito_simulador .carrito {
-    background-color: #999;
+    background-color: #2a0606;
     width: 900px;
     height: 350px; }
 
@@ -303,3 +338,39 @@ header {
 .bodyindex .teamCTA:hover {
   background-color: black;
   color: white; }
+
+.text-input {
+  height: 4.0rem;
+  padding: 0 0 0 3.5rem;
+  border: 100px;
+  margin: 0;
+  color: #333;
+  line-height: normal;
+  -webkit-box-flex: 1;
+  width: 400px;
+  padding-left: 4rem;
+  display: inline-block;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  background-color: -internal-light-dark(white, #3b3b3b);
+  margin: 0em; }
+
+.botonBuscador {
+  height: 4.4rem;
+  border: 0;
+  color: #fff;
+  background: rgba(43, 44, 125, 0.717);
+  display: inline-block;
+  margin: 0 10px;
+  min-width: 140px;
+  border-radius: 0.6rem;
+  cursor: pointer; }
+  .botonBuscador:hover {
+    background-color: blueviolet; }
