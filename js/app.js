@@ -131,6 +131,19 @@ renderizarListaLibros()
 
 
 
+// libreria 23/06
+
+document.querySelector('#BotonComprar').addEventListener('click',() => {
+    Swal.fire(
+        'Compra Exitosa',
+        'Gracias por su compra,vuelva pronto!',
+        'success'
+      )
+})
+
+
+
+
 
 
 
