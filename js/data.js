@@ -1,3 +1,5 @@
+/*
+
 class libro{
     constructor(name,date,format,price,img,url,id,autor){
         
@@ -26,3 +28,5 @@ const LibrosBaratos = [volumen1, volumen2]
 const LibrosCaros = [volumen3, volumen4]
 let TodosLosLibros = [...LibrosBaratos, ...LibrosCaros]
 console.log(TodosLosLibros)
+
+*/

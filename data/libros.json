@@ -1,0 +1,46 @@
+
+{
+    "data" : [
+       {
+           "name":"Berserk Volume 1",
+           "date":"1 Dic 1990",
+           "format":"Paperback",
+           "price":"2.224",
+           "img":"./assets/images/Berserkimg.jpg",
+           "url":"https://es.wikipedia.org/wiki/Berserk_(manga)",
+           "id":"001",
+           "autor":"By Kentaro Miura"
+       },
+       {
+           "name":"Berserk Volume 2",
+           "date":"3 Mar 1991",
+           "format":"Paperback",
+           "price":"2.479",
+           "img":"./assets/images/Berserk2.jpg",
+           "url":"https://es.wikipedia.org/wiki/Berserk_(manga)",
+           "id":"002",
+           "autor":"By Kentaro Miura"
+       },
+       {
+           "name":"Berserk Volume 3",
+           "date":"31 Oct 1991",
+           "format":"Paperback",
+           "price":"2.290",
+           "img":"./assets/images/Berserk3.jpg",
+           "url":"https://es.wikipedia.org/wiki/Berserk_(manga)",
+           "id":"003",
+           "autor":"By Kentaro Miura"
+       },
+       {
+           "name":"Berserk Volume 4",
+           "date":"29 Feb 1992",
+           "format":"Paperback",
+           "price":"2.252",
+           "img":"./assets/images/Berserk4.jpg",
+           "url":"https://es.wikipedia.org/wiki/Berserk_(manga)",
+           "id":"004",
+           "autor":"By Kentaro Miura"
+       }
+   
+   ]
+}

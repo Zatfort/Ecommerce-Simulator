@@ -1,6 +1,6 @@
 // Declaraciones
 //--------------
-const allLibros = [volumen1, volumen2, volumen3, volumen4]
+let allLibros
 
 
 let Carrito = JSON.parse(localStorage.getItem('Carrito')) || []
@@ -123,10 +123,6 @@ cardCTA.addEventListener('click', agregarLibroaCarrito)
 
 
 
-// Ejecuciones 
-//------------
-
-renderizarListaLibros()
 
 
 
@@ -141,8 +137,17 @@ document.querySelector('#BotonComprar').addEventListener('click',() => {
       )
 })
 
+// Ejecuciones 
+//------------
 
+// renderizarListaLibros()
 
+fetch('../data/libros.json')
+    .then((res) => res.json())
+    .then((jsonResponse) =>{
+        allLibros = jsonResponse.data
+        renderizarListaLibros(allLibros)
+    })
 
 
 
